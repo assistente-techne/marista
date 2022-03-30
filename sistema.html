@@ -14,7 +14,7 @@
     <div class="container-sistema">
         <div class="menu-lateral">
             <div class="div-logo-sistema"><img src="./img/user.png" class="logo-sistema"></div>
-            <div class="txt-saudacao">Olá, NOME PESSOA</div>
+            <div class="txt-saudacao">Olá, <span id="txt-nome"></span></div>
             <div class="item-menu">Home</div>
             <div class="item-exit" onclick="Exit()">Sair &rarr;	</div>
         </div>
@@ -22,6 +22,16 @@
         <img src="./img/logo.png" class="logo-sistema-fundo">
     </div>
     <script type="text/javascript" src="./js/chat.js"></script>
+    <script type="text/javascript">
+        var tipo = localStorage.getItem('chat-tipo-login')
+
+        if(tipo == 1){
+            document.querySelector("#txt-nome").innerHTML ="Responsavel";
+        }else {
+            document.querySelector("#txt-nome").innerHTML ="Aluno";
+        }
+        
+    </script>
 </body>
 
 </html>
