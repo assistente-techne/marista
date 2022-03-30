@@ -13,11 +13,24 @@ function EnviarForm() {
     else {
         if (login == 'responsavel') {
             localStorage.setItem('acesso', 'resp')
+            localStorage.setItem('chat-tipo-login', 1)
+            
         } else {
-            localStorage.setItem('acesso', 'aluno')    
+            localStorage.setItem('acesso', 'aluno')  
+            localStorage.setItem('chat-tipo-login', 2)  
         }
 
 
 
     }
+}
+
+function Exit() {
+  
+        localStorage.removeItem('acesso')
+        localStorage.removeItem('chat-tipo-login')
+        window.location.reload(true)
+
+        location.href = 'index.html';
+
 }
