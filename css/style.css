@@ -1,5 +1,12 @@
-body {
+@font-face {
+    src: url(./Roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto-Regular';    
+    font-weight: normal;
+} 
 
+
+body {
+    font-family: 'Roboto-Regular'; 
     margin: 0px 00px 00px 0;
     background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
