@@ -196,7 +196,6 @@ input:focus{
     cursor: pointer;
     position:absolute;
 	bottom:0;
-	width:100%;
 }
 
 .item-menu .item-exit:hover{
