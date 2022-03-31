@@ -13,20 +13,25 @@
 <body>
     <div class="container">
         <div class="box">
-            <form action="./sistema.html" id="form">
-                <img src="./img/logo.png" alt="logo" class="logo">
-                <div class="div-input">
-                    <input type="text" class="input-login" placeholder="Login" required id="input-login">
+            <div id="all">
+                <div id="login-box">
+                    <img src="./img/logo.png" alt="logo" class="logo">
+                    <div id="login-inputs">
+                        <div class="div-input">
+                            <input type="text" placeholder="Login" name="usuario" class="input-login" required>
+                        </div>
+                        <div class="div-input">
+                            <input type="password" placeholder="Senha" name="senha" class="input-login" required>
+                        </div>
+                    </div>
+                    <div id="enviar">
+                        <input type="button" class="btn-login" onclick="Login()" class="botao" value="Login">
+                    </div>
                 </div>
-                <div class="div-input">
-                    <input type="password" class="input-login" placeholder="Senha" required id="input-senha">
-                </div>
-                <div>
-                    <button class="btn-login"   onclick="EnviarForm()">Entrar</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
+
 
 </body>
 
