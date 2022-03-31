@@ -26,10 +26,15 @@
         var tipo = localStorage.getItem('chat-tipo-login')
 
         if(tipo == 1){
-            document.querySelector("#txt-nome").innerHTML ="Responsavel";
-        }else {
+            document.querySelector("#txt-nome").innerHTML ="Responsável";
+        }else if(tipo == 2){
             document.querySelector("#txt-nome").innerHTML ="Aluno";
+        }else if(tipo == 3){
+            document.querySelector("#txt-nome").innerHTML ="Responsável Legal";
+        }else if(tipo == 4){
+            document.querySelector("#txt-nome").innerHTML ="Responsável Fin.";
         }
+
         
     </script>
 </body>
